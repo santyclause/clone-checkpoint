@@ -12,15 +12,17 @@
 </head>
 
 <body>
-  <nav>
-    <i>icon</i>
+  <nav class="dark-bg">
+    <i class="mdi mdi-rodent"></i>
     <span>title</span>
   </nav>
   <header class="container-fluid">
-    <section class="row">
+    <!-- SECTION hero image, form + text-->
+    <section class="row hero">
+      <!--NOTE form-->
       <div class="col">
         <p>Subtle heading</p>
-        <div>
+        <div class="light-bg">
           <h4>Less subtle heading</h4>
           <form>
             <input type="text">
@@ -33,6 +35,7 @@
           </form>
         </div>
       </div>
+      <!-- NOTE text over image, remove on mobile -->
       <div class="col">
         <h1>Text over an image</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -41,62 +44,62 @@
   </header>
   <main class="container-fluid">
     <!-- SECTION first section, text + floating element with icons and more text -->
-    <section class="row">
+    <section class="row light-bg">
       <div class="col">
         <h1>Lorem ipsum dolor sit amet.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores exercitationem quis obcaecati quas
           quibusdam.</p>
       </div>
       <!-- NOTE floating element-->
-      <div class="col">
+      <div class="col dark-bg">
         <section class="row">
-          <div class="col-1">icon</div>
+          <div class="col-1"><i class="icon">icon</i></div>
           <div class="col-11">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1">icon</div>
+          <div class="col-1"><i class="icon">icon</i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1">icon</div>
+          <div class="col-1"><i class="icon">icon</i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1">icon</div>
+          <div class="col-1"><i class="icon">icon</i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1">icon</div>
+          <div class="col-1"><i class="icon">icon</i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
         </section>
       </div>
     </section>
     <!-- SECTION second section, image + text -->
-    <section class="row">
+    <section class="row dark-bg">
       <div class="col">
         image
       </div>
       <div class="col">
-        <h1><i>icon</i> Lorem ipsum dolor sit amet consectetur.</h1>
+        <h1><i class="icon">icon</i> Lorem ipsum dolor sit amet consectetur.</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, fugit cupiditate expedita nam harum
           voluptatem?</p>
         <button>MORE</button>
       </div>
     </section>
     <!-- SECTION third section, three testimonials -->
-    <section class="row">
-      <div class="col">
-        <i>quote icon</i>
+    <section class="row light-bg">
+      <div class="col-md-3 dark-bg">
+        <i class="icon">quote icon</i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
         <p class="text-center">Lorem ipsum dolor sit amet.</p>
       </div>
       <!-- NOTE big testimonial -->
-      <div class="col">
+      <div class="col-md-3 dark-bg">
         <div>
-          <i>star</i>
-          <i>star</i>
-          <i>star</i>
+          <i class="icon">star</i>
+          <i class="icon">star</i>
+          <i class="icon">star</i>
         </div>
-        <i>quote icon</i>
+        <i class="icon">quote icon</i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
         <p class="text-center">Lorem ipsum dolor sit amet.</p>
       </div>
-      <div class="col">
-        <i>quote icon</i>
+      <div class="col-md-3 dark-bg">
+        <i class="icon">quote icon</i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
         <p class="text-center">Lorem ipsum dolor sit amet.</p>
@@ -104,10 +107,10 @@
     </section>
   </main>
   <footer>
-    <div>
+    <div class="dark-bg">
       dunno, something goes here
     </div>
-    <div>
+    <div class="light-bg">
       contact info
     </div>
   </footer>

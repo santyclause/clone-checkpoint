@@ -1,0 +1,27 @@
+:root {
+  --dark: #282828;
+  --light: #e6e6e6;
+  --green: #00DE36;
+}
+
+nav.dark-bg {
+  height: 5vh;
+  color: var(--green);
+}
+
+.dark-bg {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark-bg h1 {
+  color: var(--green);
+}
+
+.light-bg {
+  background-color: var(--light);
+}
+
+.icon {
+  color: var(--green);
+}
