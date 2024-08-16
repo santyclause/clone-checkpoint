@@ -13,6 +13,8 @@ nav {
 header {
   height: 90vh;
   background-image: url(imgs/lightning_rat.png);
+  background-size: cover;
+  background-position: center;
 }
 
 input {
@@ -102,6 +104,11 @@ input {
   padding: 3em;
 }
 
+.battery-img {
+  padding: 0 3em;
+  mask-image: radial-gradient(#282828 50%, transparent 60%);
+}
+
 .s-s-txt {
   margin-top: 3em;
 }
@@ -109,6 +116,7 @@ input {
 .more-btn {
   color: var(--green);
   font-weight: bold;
+  margin-right: 5%;
 }
 
 .testimonial {
@@ -122,5 +130,7 @@ input {
     top: 0;
     left: 0;
     box-shadow: none;
+    order: -1;
+    margin-bottom: 2em;
   }
 }
