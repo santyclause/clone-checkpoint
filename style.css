@@ -1,12 +1,30 @@
 :root {
   --dark: #282828;
   --light: #e6e6e6;
+  --lightOffset: #C8C8C8;
   --green: #00DE36;
 }
 
-nav.dark-bg {
-  height: 5vh;
-  color: var(--green);
+nav {
+  height: 10vh;
+  font-size: 3em;
+}
+
+header {
+  height: 90vh;
+  background-image: url(imgs/lightning_rat.png);
+}
+
+input {
+  margin: 5px 0px;
+}
+
+.full-input {
+  width: 90%;
+}
+
+.half-input {
+  width: 40%;
 }
 
 .dark-bg {
@@ -22,6 +40,87 @@ nav.dark-bg {
   background-color: var(--light);
 }
 
+.grn-txt {
+  color: var(--green);
+}
+
 .icon {
   color: var(--green);
+  font-size: 2em;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.hero-txt {
+  color: var(--light);
+  border-left: 5px solid var(--green);
+  height: 10%;
+  text-shadow: 0px 2px 5px var(--dark);
+  margin-top: 10vh;
+}
+
+.form-container {
+  min-height: 51vh;
+}
+
+.msg {
+  min-height: 20vh;
+}
+
+.form-submit {
+  color: var(--dark);
+  background-color: var(--green);
+  font-weight: bold;
+}
+
+.form-submit:hover {
+  background-color: #00b02c;
+}
+
+
+.first-section {
+  position: relative;
+  padding: 3em;
+}
+
+.floating-elem {
+  position: absolute;
+  box-shadow: 0px 0px 7px black;
+  padding: 2em;
+  top: 3em;
+  left: 50%;
+}
+
+.second-section {
+  padding: 3em;
+}
+
+.s-s-txt {
+  margin-top: 3em;
+}
+
+.more-btn {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.testimonial {
+  box-shadow: 0px 0px 7px var(--dark);
+  padding: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .floating-elem {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
 }

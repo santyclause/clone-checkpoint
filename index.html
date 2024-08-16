@@ -12,31 +12,40 @@
 </head>
 
 <body>
-  <nav class="dark-bg">
-    <i class="mdi mdi-rodent"></i>
-    <span>title</span>
+  <nav class="dark-bg sticky-top container-fluid">
+    <section class="row align-items-center h-100">
+      <div class="col-2 text-end">
+        <i class="logo grn-txt mdi mdi-rodent"></i>
+      </div>
+      <div class="col-10">
+        <span class="grn-txt">Ratical</span>
+      </div>
+    </section>
   </nav>
   <header class="container-fluid">
     <!-- SECTION hero image, form + text-->
-    <section class="row hero">
+    <section class="row hero  justify-content-evenly">
       <!--NOTE form-->
-      <div class="col">
-        <p>Subtle heading</p>
-        <div class="light-bg">
-          <h4>Less subtle heading</h4>
-          <form>
-            <input type="text">
-            <input type="email">
-            <input type="number">
-            <input type="text">
-            <input type="text">
-            <input type="checkbox">
-            <button>SUBMIT</button>
+      <div class="col-md-4 col-lg-3 mt-5">
+        <p class="text-light px-4">Subtle heading</p>
+        <div class="light-bg form-container rounded p-4">
+          <form class="container-fluid">
+            <section class="row justify-content-between align-items-end g-1">
+              <h5 class="col-12">Less subtle heading</h5>
+              <input type="text" class="col-12" placeholder="NAME">
+              <input type="email" class="col-12" placeholder="EMAIL">
+              <input type="number" class="col-6" placeholder="PHONE">
+              <input type="text" class="col-5" placeholder="EXT.">
+              <textarea type="text" class="col-12 msg" placeholder="MESSAGE"></textarea>
+              <input type="checkbox" class="col-1">
+              <span class="col-11">Consign my soul to the Aether.</span>
+              <button class="mt-4 btn form-submit">SUBMIT</button>
+            </section>
           </form>
         </div>
       </div>
       <!-- NOTE text over image, remove on mobile -->
-      <div class="col">
+      <div class="col-md-6 hero-txt d-none d-md-block">
         <h1>Text over an image</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
@@ -44,65 +53,69 @@
   </header>
   <main class="container-fluid">
     <!-- SECTION first section, text + floating element with icons and more text -->
-    <section class="row light-bg">
-      <div class="col">
+    <section class="row light-bg first-section">
+      <div class="col-md-5">
         <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maiores exercitationem quis obcaecati quas
-          quibusdam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam facere mollitia asperiores unde suscipit
+          voluptatibus nam quidem magni, molestiae, autem molestias perspiciatis consectetur perferendis repudiandae
+          quis non minima sunt.</p>
       </div>
       <!-- NOTE floating element-->
-      <div class="col dark-bg">
-        <section class="row">
-          <div class="col-1"><i class="icon">icon</i></div>
+      <div class="col-md-5 dark-bg floating-elem">
+        <section class="row align-items-center">
+          <div class="col-1"><i class="icon mdi mdi-wrench"></i></div>
           <div class="col-11">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1"><i class="icon">icon</i></div>
+          <div class="col-1"><i class="icon mdi mdi-car"></i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1"><i class="icon">icon</i></div>
+          <div class="col-1"><i class="icon mdi mdi-phone-in-talk"></i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1"><i class="icon">icon</i></div>
+          <div class="col-1"><i class="icon mdi mdi-chart-bubble"></i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-1"><i class="icon">icon</i></div>
+          <div class="col-1"><i class="icon mdi mdi-lightning-bolt-circle"></i></div>
           <div class="col-11">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
         </section>
       </div>
     </section>
     <!-- SECTION second section, image + text -->
-    <section class="row dark-bg">
-      <div class="col">
+    <section class="row dark-bg second-section">
+      <div class="col-md-4">
         image
       </div>
-      <div class="col">
-        <h1><i class="icon">icon</i> Lorem ipsum dolor sit amet consectetur.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, fugit cupiditate expedita nam harum
-          voluptatem?</p>
-        <button>MORE</button>
+      <div class="col s-s-txt">
+        <h1><i class="icon mdi mdi-shield-check"></i> Lorem ipsum dolor sit amet consectetur.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores quasi minus necessitatibus sit?
+          Libero voluptates ut veniam nam ipsam aliquam sapiente laboriosam molestias voluptatibus. Quod autem quasi
+          perferendis dolorem.</p>
+        <div class="text-end">
+          <button class="btn more-btn">MORE</button>
+        </div>
       </div>
     </section>
     <!-- SECTION third section, three testimonials -->
-    <section class="row light-bg">
-      <div class="col-md-3 dark-bg">
-        <i class="icon">quote icon</i>
+    <section class="row light-bg justify-content-evenly p-5 align-items-center">
+      <div class="col-md-3 dark-bg testimonial">
+        <i class="icon mdi mdi-format-quote-open"></i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
       </div>
       <!-- NOTE big testimonial -->
-      <div class="col-md-3 dark-bg">
-        <div>
-          <i class="icon">star</i>
-          <i class="icon">star</i>
-          <i class="icon">star</i>
+      <div class="col-md-3 dark-bg testimonial">
+        <div class="text-center">
+          <i class="icon mdi mdi-star"></i>
+          <i class="icon mdi mdi-star"></i>
+          <i class="icon mdi mdi-star"></i>
         </div>
-        <i class="icon">quote icon</i>
+        <i class="icon mdi mdi-format-quote-open"></i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
       </div>
-      <div class="col-md-3 dark-bg">
-        <i class="icon">quote icon</i>
+      <div class="col-md-3 dark-bg testimonial">
+        <i class="icon mdi mdi-format-quote-open"></i>
         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
           libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
       </div>
     </section>
   </main>
