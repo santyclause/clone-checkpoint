@@ -11,14 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Ratical</title>
 </head>
 
 <body>
   <nav class="dark-bg sticky-top container-fluid">
     <section class="row align-items-center h-100">
-      <div class="col-2 text-end">
-        <i class="logo grn-txt mdi mdi-rodent"></i>
+      <div class="col-2 text-end logo">
+        <i class="grn-txt mdi mdi-rodent"></i>
       </div>
       <div class="col-10">
         <span class="grn-txt">Ratical</span>
@@ -37,11 +37,15 @@
               <h5 class="col-12">Give us your thoughts!</h5>
               <input type="text" class="col-12" placeholder="NAME">
               <input type="email" class="col-12" placeholder="EMAIL">
-              <input type="number" class="col-6" placeholder="PHONE">
-              <input type="text" class="col-5" placeholder="EXT.">
+              <div class="col-6 phone-input">
+                <input type="number" class="w-100" placeholder="PHONE">
+              </div>
+              <div class="col-6 shared-input">
+                <input type="text" class="w-100" placeholder="EXT.">
+              </div>
               <textarea type="text" class="col-12 msg" placeholder="MESSAGE"></textarea>
               <input type="checkbox" class="col-1">
-              <span class="col-11">Consign thine soul to powering the Aether.</span>
+              <span class="col-11">Consign mine soul to powering the Aether.</span>
               <button class="mt-4 btn form-submit">SUBMIT</button>
             </section>
           </form>
@@ -67,16 +71,16 @@
       <!-- NOTE floating element-->
       <div class="col-md-5 dark-bg floating-elem">
         <section class="row align-items-center">
-          <div class="col-2"><i class="icon mdi mdi-cellphone-link"></i></div>
-          <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-2"><i class="icon mdi mdi-car"></i></div>
-          <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-2"><i class="icon mdi mdi-chart-bubble"></i></div>
-          <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div class="col-2"><i class="icon mdi mdi-wrench"></i></div>
-          <div class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-          <div class="col-2"><i class="icon mdi mdi-lightning-bolt-circle"></i></div>
-          <div class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+          <div class="col-2 text-center"><i class="icon mdi mdi-cellphone-link"></i></div>
+          <div class="col-10">Small enough to power your mobile devices...</div>
+          <div class="col-2 text-center"><i class="icon mdi mdi-car"></i></div>
+          <div class="col-10">Reliable enough to power your car...</div>
+          <div class="col-2 text-center"><i class="icon mdi mdi-office-building"></i></div>
+          <div class="col-10">Yet powerful enough to power entire skyscrapers!</div>
+          <div class="col-2 text-center"><i class="icon mdi mdi-wrench"></i></div>
+          <div class="col-10">Backed up by being easily swappable.</div>
+          <div class="col-2 text-center"><i class="icon mdi mdi-lightning-bolt-circle"></i></div>
+          <div class="col-10">Not to mention also being rechargeable!</div>
         </section>
       </div>
     </section>
@@ -86,10 +90,9 @@
         <img src="imgs/battery.png" alt="battery" class="img-fluid battery-img">
       </div>
       <div class="col s-s-txt">
-        <h1><i class="icon mdi mdi-shield-check"></i> Lorem ipsum dolor sit amet consectetur.</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores quasi minus necessitatibus sit?
-          Libero voluptates ut veniam nam ipsam aliquam sapiente laboriosam molestias voluptatibus. Quod autem quasi
-          perferendis dolorem.</p>
+        <h1><i class="icon mdi mdi-shield-check"></i> Federally endorsed construction.</h1>
+        <p>Ratical holds the rare honor of being personally endorsed by the Department of Energy for our innovative,
+          safe, and reliable design of battery. This is a whole new level of groundbreaking.</p>
         <div class="text-end">
           <button class="btn more-btn">MORE</button>
         </div>
@@ -97,38 +100,51 @@
     </section>
     <!-- SECTION third section, three testimonials -->
     <section class="row light-bg justify-content-evenly p-5 align-items-center">
-      <div class="col-md-3 dark-bg testimonial">
+      <div class="col-md-3 dark-bg testimonial order-2 order-md-1">
         <i class="icon mdi mdi-format-quote-open"></i>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
-          libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center">Keeps my warp lightning cannon crackling and dangerous! Only Ratical boasts-promotes
+          unstoppable power. Man-things will never know what hit them, yes-yes.</p>
+        <p class="text-center grn-txt">-Sleek Sharpwit</p>
       </div>
       <!-- NOTE big testimonial -->
-      <div class="col-md-3 dark-bg testimonial">
+      <div class="col-md-3 dark-bg testimonial order-1 order-md-2">
         <div class="text-center">
           <i class="icon mdi mdi-star"></i>
           <i class="icon mdi mdi-star"></i>
           <i class="icon mdi mdi-star"></i>
         </div>
         <i class="icon mdi mdi-format-quote-open"></i>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
-          libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center">I've been using Ratical batteries for 5 years now and I'm able to forget that batteries
+          are even a thing most of the time. They have yet to fail me and I doubt they ever will.</p>
+        <p class="text-center grn-txt">-Gimli, son of Gloin</p>
       </div>
-      <div class="col-md-3 dark-bg testimonial">
+      <div class="col-md-3 dark-bg testimonial order-3">
         <i class="icon mdi mdi-format-quote-open"></i>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sapiente
-          libero repudiandae aspernatur eum corporis, architecto reiciendis quidem totam.</p>
-        <p class="text-center grn-txt">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center">My neighbor ruptured his Ratical laptop battery and the
+          explosion of Aether leveled his home, leaving my house untouched! It's great having a product this safe
+          around.</p>
+        <p class="text-center grn-txt">-Rob Robertson</p>
       </div>
     </section>
   </main>
   <footer>
-    <div class="dark-bg">
-      dunno, something goes here
+    <div class="dark-bg p-5 text-center">
+      <h1>Why wait?</h1>
+      <p>Find Ratical batteries at any local supermarket. Feel free to reach out to us either above or below!</p>
     </div>
-    <div class="light-bg">
-      contact info
+    <div class="light-bg container-fluid p-5">
+      <section class="row text-center">
+        <div class="col-12 col-sm-6">
+          <h3>Phone</h3>
+          <p>(208)555-0628</p>
+          <p>Mon-Fri / 9:00 AM - 5:00 PM</p>
+        </div>
+        <div class="col-12 col-sm-6">
+          <h3>Address</h3>
+          <p>5208 N Skavenblight Way</p>
+          <p>Meridian, ID 83642</p>
+        </div>
+      </section>
     </div>
   </footer>
 </body>
